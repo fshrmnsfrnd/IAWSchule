@@ -1,0 +1,54 @@
+p{
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1{
+    size: 60px;
+    color: aquamarine;
+}
+
+h2{
+    size: 40px;
+    color: blueviolet;
+}
+
+h3{
+    size: 20px;
+    color: aqua;
+}
+
+pre{
+    background-color: yellow;
+    border: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Hinweis{
+    background-color: gray;
+    border: 4px;
+    border-color: navy;
+    border-style: dotted;
+    font-weight: bold;
+}
+
+.Speziell{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Hervorgehoben{
+    color: red;
+    text-transform: uppercase;
+}
+
+body {
+    background-image: url(./Square_200x200.png);
+    background-repeat: repeat;
+}
+
+.Center{
+    text-align: center;
+}
+
+.Hover:hover{
+    color: red;
+}

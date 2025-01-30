@@ -1,0 +1,31 @@
+body{
+    background-color: aqua;
+}
+
+#flexrahmen{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#flexrahmen>div{
+    display: flex;
+    border: 1px solid black;
+    background-color: whitesmoke;
+}
+
+#flexrahmen>div>div{
+    padding: 5px 5px 5px 5px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+#flexrahmen>div>div:first-child{
+    width: 30%;
+    text-align: right;
+}
+
+input[name="button01"]{
+    background-color: blue;
+    color: white;
+    padding: 4px;
+}

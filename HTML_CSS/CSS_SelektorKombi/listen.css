@@ -1,0 +1,20 @@
+.liste1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style-type:lower-greek;
+}
+
+.liste2{
+    list-style-image: url(./bilder/bild10.jpg);
+}
+
+.liste2 li:nth-child(2n){
+    background-color: blueviolet;
+}
+
+.liste3{
+    list-style-type: "*";
+}
+
+.liste3>li:hover{
+    zoom: 2;
+}

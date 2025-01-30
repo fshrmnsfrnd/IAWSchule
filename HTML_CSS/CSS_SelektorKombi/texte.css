@@ -1,0 +1,73 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+h1, h2{
+    font-size: 1.5em;
+}
+
+#px12{
+    font-size: 12px;
+}
+
+#px16{
+    font-size: 16px;
+}
+
+#em08{
+    font-size: 0.8em;
+}
+
+#em12{
+    font-style: 1.2em;
+}
+
+#pc80{
+    font-size: 80%;
+}
+
+#pc120{
+    font-size: 120%;
+}
+
+#color{
+    color: blue;
+}
+
+#background{
+    background-color: rgb(17, 67, 51);
+    color: bisque;
+}
+
+#italic{
+    font-style: italic;
+}
+
+#bold{
+    font-weight: bold;
+}
+
+#capletter{
+    text-transform: uppercase;
+}
+
+#linethrough{
+    text-decoration: line-through;
+}
+
+#textbox{
+    border-style: solid;
+    border-color: blueviolet;
+    border-radius: 10pt;
+}
+
+@font-face {
+    font-family: "OrangeJuice";
+    src: url("./OrangeJuice.ttf");
+}
+
+#muchtext {
+    text-align: center;
+    font-family: 'OrangeJuice', Courier, monospace;
+}

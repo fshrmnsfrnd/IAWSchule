@@ -1,0 +1,25 @@
+.red{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.green {
+    height: 1px;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-style: solid;
+    border-color: green;
+    border-width: 2px;
+    padding: 5px;
+    transition: 1s ease;
+}
+
+.green:hover {
+    scale: 2; 
+}

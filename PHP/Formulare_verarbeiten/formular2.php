@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularvorlage</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div>
+        <form action="./formular2.php" method="POST" enctype="multipart/form-data">
+
+            <div id="flexrahmen">
+                <h1>Vorlage - Formulare</h1>
+
+                <div>
+                    <div class="Spalte1">Label</div>
+                    <div class="Spalte2">Input</div>
+                </div>
+
+                <div> <!-- Standard-Text -->
+                    <div><label for="vname">Vorname</label></div>
+                    <div><input type="text" id="vname" name="vname" placeholder="Vorname" value="<?php print $_POST["vname"]?>"></div>
+                </div>
+
+                <div>
+                    <div><label for="nachname">Nachname</label></div>
+                    <div><input type="text" id="nachname" name="nachname" placeholder="Nachname"></div>
+                </div>
+
+                <div> <!-- Datum -->
+                    <div><label for="datum">Datum</label></div>
+                    <div><input type="date" id="datum" name="datum"></div>
+                </div>
+
+                <div> <!-- E-Mail -->
+                    <div><label for="email">E-Mail</label></div>
+                    <div><input type="email" name="email" id="email" placeholder="example@mail.de"></div>
+                </div>
+
+                <div> <!-- Telefonnummer -->
+                    <div><label for="telefon">Telefonnummer</label></div>
+                    <div><input type="tel" name="telefon" id="telefon" placeholder="+49-XXX-XXXXXXXX"></div>
+                </div>
+
+                <div> <!-- Webseite -->
+                    <div><label for="homepage">Webseite</label></div>
+                    <div><input type="url" id="homepage" name="homepage" placeholder="www.test.de"></div>
+                </div>
+
+                <div> <!-- Passwort -->
+                    <div><label for="passwort">Passwort</label></div>
+                    <div><input type="password" id="password" name="password" placeholder="Passwort">
+                        <input type="password" id="password2" name="password" placeholder="Passwort wiederholen">
+                    </div>
+                </div>
+                <div>
+                    <!-- Großes Textfeld -->
+                    <div><label for="Textfeld">Textfeld </label></div>
+                    <div><textarea name="text" id="Textfeld" placeholder="Eigener Text..."></textarea></div>
+                </div>
+
+                <div> <!-- Radiobuttons -->
+                    <div>Radiobutton</div>
+                    <div><input type="radio" id="male" name="gender" value="male">
+                        <label for="male">männlich</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">weiblich</label><br>
+                        <input type="radio" id="other" name="gender" value="other" checked>
+                        <label for="other">divers</label>
+                    </div>
+                </div>
+
+                <div> <!-- Checkboxen -->
+                    <div>Checkboxen</div>
+                    <!-- EMMET: (input[type="checkbox" name="checkbox$$" id="checkbox$$" value="v$$"]+label[for="checkbox$$"]{Auswahl $$}+br)*4 -->
+                    <div><input type="checkbox" name="checkbox01" id="checkbox01" value="v01">
+                        <label for="checkbox01">Auswahl 01</label>
+                        <input type="checkbox" name="checkbox01" id="checkbox05" value="v05">
+                        <label for="checkbox05">Auswahl 05</label>
+                        <br>
+                        <input type="checkbox" name="checkbox02" id="checkbox02" value="v02">
+                        <label for="checkbox02">Auswahl 02</label>
+                        <input type="checkbox" name="checkbox06" id="checkbox01" value="v06">
+                        <label for="checkbox06">Auswahl 06</label>
+                        <br>
+                        <input type="checkbox" name="checkbox03" id="checkbox03" value="v03">
+                        <label for="checkbox03">Auswahl 03</label>
+                        <br>
+                        <input type="checkbox" name="checkbox04" id="checkbox04" value="v04">
+                        <label for="checkbox04">Auswahl 04</label>
+                    </div>
+                </div>
+
+                <div> <!-- Buttons mit Funktionen -->
+                    <div>Buttons</div>
+                    <div><input class="button" type="button" value="Wichtiger Hinweis" name="button01"
+                            onclick="alert('Hinweis: Bitte das Formular sorgfältig ausfüllen, ich benötige dringend ALLE Daten!')">
+                    </div>
+                </div>
+
+                <!-- Verschiedene Eingaben, etc. -->
+
+                <div> <!-- Nummer -->
+                    <div><label for="zahl1">Zahl zwischen 1 und 100</label></div>
+                    <div><input type="number" id="zahl1" name="zahl1" min="1" max="100" value="1"></div>
+                </div>
+
+                <!-- Auswahl -->
+                <div>
+                    <!-- EMMET: label[for="select1"]{Auswahl }+select[id="select1" name="select1" size="1"]>(option[value="option$$"]{Option $$})*5 -->
+                    <div><label for="select1">Dropdown Auswahl </label></div>
+                    <div><select name="select1" id="select1" size="1">
+                            <option value="option00">Default</option>
+                            <optgroup label="Optionen A">
+                                <option value="option01">Option 01</option>
+                                <option value="option02">Option 02</option>
+                            </optgroup>
+                            <optgroup label="Optionen B">
+                                <option value="option03">Option 03</option>
+                                <option value="option04">Option 04</option>
+                                <option value="option05">Option 05</option>
+                            </optgroup>
+                            <optgroup label="Optionen C">
+                                <option value="option06">Option 06</option>
+                                <option value="option07">Option 07</option>
+                                <option value="option08">Option 08</option>
+                                <option value="option09">Option 09</option>
+                            </optgroup>
+                        </select></div>
+                </div>
+
+                <div> <!-- Datei -->
+                    <div><label for="myfile">Datei hochladen</label></div>
+                    <div><input type="file" id="myfile" name="myfile"></div>
+                </div>
+
+                <div> <!-- Formular absenden und zurücksetzen -->
+
+                    <div><input type="submit" value="Auswahl absenden"></div>
+                    <div><input type="reset" value="Formular zurücksetzen"></div>
+                </div>
+
+            </div>
+
+
+
+        </form> <!-- Formular Ende -->
+    </div>
+
+</body>
+</html>

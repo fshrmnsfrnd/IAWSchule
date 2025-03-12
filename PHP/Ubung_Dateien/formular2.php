@@ -13,7 +13,6 @@
         //Schreiben
         print "GET: ";
         var_dump($_GET);
-        /*
         $werte = $_GET['temperatur'] . ",";
         $werte .= $_GET['wetterbeschreibung'] . ",";
         $werte .= $_GET['windstärke'] . ",";
@@ -21,7 +20,6 @@
         $werte .= $_GET['messzeit'] . "\n";
         print $werte;
         fputs($csv, $werte);
-        */
         fclose($csv);
         ?>
 </pre>

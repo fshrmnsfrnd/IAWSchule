@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background: rgb(0, 102, 255);">
+    <h1>Übung zu Templates</h1>
+    <div id="bildanzeige" style="color: white;">
+        <form action="./template.php" method="get">
+            <img src="{PicturePath}" alt="Picture">
+            <input type="text" name="nr" value="{picnr}" style="display: none;">
+            <input type="submit" value="back" name="action">
+            <input type="submit" value="next" name ="action">
+        </form>
+    </div>
+</body>
+</html>

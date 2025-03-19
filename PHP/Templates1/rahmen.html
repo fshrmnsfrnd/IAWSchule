@@ -10,7 +10,14 @@
     <h1>Übung zu Templates</h1>
     <div id="bildanzeige" style="color: white;">
         <form action="./template.php" method="get">
+            <label for="dir">Choose a Directory</label>
+            <select id="dir" name="dir">
+                <option value="bilder">bilder</option>
+                <option value="bilder2">bilder2</option>
+            </select>
+            <br>
             <img src="{PicturePath}" alt="Picture">
+            <br>
             <input type="text" name="nr" value="{picnr}" style="display: none;">
             <input type="submit" value="back" name="action">
             <input type="submit" value="next" name ="action">

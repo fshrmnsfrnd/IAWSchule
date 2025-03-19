@@ -1,16 +1,16 @@
 <?php
-$pictureDir = "./src/bilder/";
-$pictures = scandir($pictureDir);
+$pictureDir = "./src/bilder2/";
 
 $htmlTemplate = './rahmen.html';
 $html = file_get_contents($htmlTemplate);
 
 $i = 2;
+$dir;
 
 if($_GET != NULL){
-    $i = (int)$_GET['nr'];
+    $pictureDir = './src/' . $_GET['dir'] . '/';
 
-    
+    $i = (int)$_GET['nr'];
 
     if($_GET['action'] == 'next'){
         $i++;
@@ -20,12 +20,13 @@ if($_GET != NULL){
 
     if($i < 2){
         $i = 2;
-    }elseif ($i > 15) {
+    }elseif ($i > 14) {
         $i = 15;
     }
 }
 
-$newPicture = './src/bilder/' . $pictures[$i];
+$pictures = scandir($pictureDir);
+$newPicture = $pictureDir . $pictures[$i];
 $html = str_replace("{picnr}", $i, $html);
 $html = str_replace('{PicturePath}', $newPicture, $html);
 

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Adressen</h1>
+    <h2>{gruss} {userName}</h2>
+    <p>{date}</p>
+    <div id="nav">
+        <a href="index.php?buchs=A">A</a>
+        <a href="index.php?buchs=B">B</a>
+        <a href="index.php?buchs=C">C</a>
+        <a href="index.php?buchs=D">D</a>
+        <a href="index.php?buchs=E">E</a>
+        <a href="index.php?buchs=F">F</a>
+        <a href="index.php?buchs=G">G</a>
+        <a href="index.php?buchs=H">H</a>
+        <a href="index.php?buchs=I">I</a>
+        <a href="index.php?buchs=J">J</a>
+        <a href="index.php?buchs=K">K</a>
+        <a href="index.php?buchs=L">L</a>
+        <a href="index.php?buchs=M">M</a>
+        <a href="index.php?buchs=N">N</a>
+        <a href="index.php?buchs=O">O</a>
+        <a href="index.php?buchs=P">P</a>
+        <a href="index.php?buchs=Q">Q</a>
+        <a href="index.php?buchs=R">R</a>
+        <a href="index.php?buchs=S">S</a>
+        <a href="index.php?buchs=T">T</a>
+        <a href="index.php?buchs=U">U</a>
+        <a href="index.php?buchs=V">V</a>
+        <a href="index.php?buchs=W">W</a>
+        <a href="index.php?buchs=X">X</a>
+        <a href="index.php?buchs=Y">Y</a>
+        <a href="index.php?buchs=Z">Z</a>
+    </div>
+    <div id="formular">
+        <form action="" method="">
+            <label for="username">Name:</label><input type="text" name="username" id="username" value="{userName}">
+            <div>
+                <label for="farbe">Farbe: </label>
+                <select name="farbe" id="farbe">
+                    <option value=""></option>
+                    <option value="rot" {rot}>Rot</option>
+                    <option value="gruen" {gruen}>Grün</option>
+                    <option value="blau" {blau}>Blau</option>
+                    <option value="gelb" {gelb}>Gelb</option>
+                </select>
+            </div>
+            <input type="submit" value="OK">
+
+        </form>
+    </div>
+    <div>
+        {data}
+        <!--
+        <table class="rot">
+                <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Vorname</th>
+
+                    <th>Straße</th>
+                    <th>Nr.</th>
+                    <th>PLZ</th>
+                    <th>Stadt</th>
+                    <th>Bundesland</th>
+                </tr>
+                <tr>
+                    <td>Albrecht</td>
+                    <td>Klaus</td>
+
+                    <td>Löwenzahnstraße</td>
+                    <td>63</td>
+                    <td>28357</td>
+                    <td>Bremen</td>
+                    <td>Bremen
+                    </td>
+                </tr>
+                <tr>
+                    <td>Albrecht</td>
+                    <td>Fritz</td>
+
+                    <td>Steckrübenstraße</td>
+                    <td>97</td>
+                    <td>12047</td>
+                    <td>Berlin</td>
+                    <td>Berlin
+                    </td>
+                </tr>
+                <tr>
+                    <td>Albrecht</td>
+                    <td>Emil</td>
+
+                    <td>Wiesenschaumkrautgrünstraße</td>
+                    <td>29</td>
+                    <td>67067</td>
+                    <td>Ludwigshafen</td>
+                    <td>Rheinland-Pfalz
+                    </td>
+                </tr>
+            </tbody>
+            
+        </table>
+    -->
+    </div>
+</body>
+
+</html>
